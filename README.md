@@ -9,3 +9,5 @@ i3 rice stuff
 2.Removed unneccesary testing stuff          
 
 3.Added script for checking fan speed (script shamelessly stolen from https://github.com/x70b1/polybar-scripts/tree/master/polybar-scripts/system-fan-speed)
+
+4.Added temperature
