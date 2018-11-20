@@ -1,6 +1,7 @@
 # i3-rice
 i3 rice stuff
 
+![Screenshot](https://i.redd.it/1enl36nkdfz11.png)
 # Changelog
 ## 20.11.2018: 
 
