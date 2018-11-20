@@ -19,7 +19,7 @@ font-2 = Termsynu:size=8:antialias=false;-2
 font-3 = FontAwesome:size=10;0
 
 modules-left = powermenu mpd
-modules-right = volume backlight wireless-network wired-network battery date
+modules-right = volume backlight redshift-temp wireless-network wired-network battery date
 
 [bar/bottom]
 monitor = ${env:MONITOR:}
@@ -311,6 +311,7 @@ label-unmounted = %mountpoint%: not mounted
 [module/system-fan-speed]
 type = custom/script
 exec = ~/.config/polybar/system-fan-speed
+format-prefix=
 interval = 10
 
 [module/temperature]
@@ -318,4 +319,10 @@ type=internal/temperature
 thermal-zone=0
 hwmon-path=/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input
 warn-temperature=65
+
+[module/redshift-temp]
+type=custom/script
+exec = ~/.config/polybar/redshift-temp
+exec-if = pgrep -x redshift
+interval = 10
 ; vim:ft=dosini
