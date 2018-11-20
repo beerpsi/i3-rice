@@ -46,7 +46,7 @@ font-4 = MaterialIcons:size=10;-1
 font-5 = Termsynu:size=8:antialias=false;0
 
 modules-left = i3
-modules-right = cpu system-fan-speed memory
+modules-right = system-fan-speed cpu temperature memory
 
 #[module/backlight]
 #type = internal/xbacklight
@@ -386,7 +386,6 @@ mount-0 = /
 ;mount-2 = /invalid/mountpoint
 
 label-mounted = %free%/%total%
-;label-mounted =  %%{e875} %free%/%total%
 
 label-unmounted = %mountpoint%: not mounted
 
@@ -395,4 +394,9 @@ type = custom/script
 exec = ~/.config/polybar/system-fan-speed
 interval = 10
 
+[module/temperature]
+type=internal/temperature
+thermal-zone=0
+hwmon-path=/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input
+warn-temperature=65
 ; vim:ft=dosini
