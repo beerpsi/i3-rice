@@ -14,3 +14,5 @@ i3 rice stuff
 4.Added temperature
 
 5.Added brightness
+
+6.Added support for redshift.
