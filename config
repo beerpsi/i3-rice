@@ -48,44 +48,24 @@ font-5 = Termsynu:size=8:antialias=false;0
 modules-left = i3
 modules-right = system-fan-speed cpu temperature memory
 
-#[module/backlight]
-#type = internal/xbacklight
-#format = <ramp> <bar>
+[module/backlight]
+type = internal/xbacklight
+format = <ramp> <label> 
 
-#ramp-0 = 
-#ramp-1 = 
-#ramp-2 = 
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
 
-#bar-width = 10
-#bar-indicator = |
-#bar-indicator-font = 3
-#bar-indicator-foreground = #ff
-#bar-fill = ─
-#bar-fill-font = 3
-#bar-fill-foreground = #c9665e
-#bar-empty = ─
-#bar-empty-font = 3
-#bar-empty-foreground = #44
-
-
-#[module/backlight]
-#type = internal/xbacklight
-#format = <ramp> <bar>
-
-#ramp-0 = 
-#ramp-1 = 
-#ramp-2 = 
-
-#bar-width = 10
-#bar-indicator = |
-#bar-indicator-font = 3
-#bar-indicator-foreground = #ff
-#bar-fill = ─
-#bar-fill-font = 3
-#bar-fill-foreground = #c9665e
-#bar-empty = ─
-#bar-empty-font = 3
-#bar-empty-foreground = #44
+bar-width = 10
+bar-indicator = |
+bar-indicator-font = 3
+bar-indicator-foreground = #ff
+bar-fill = ─
+bar-fill-font = 3
+bar-fill-foreground = #c9665e
+bar-empty = ─
+bar-empty-font = 3
+bar-empty-foreground = #44
 
 [module/battery]
 type = internal/battery
@@ -152,7 +132,7 @@ ramp-coreload-7-foreground = #ff5555
 
 [module/date]
 type = internal/date
-date =    %%{F#99}%d-%m-%Y%%{F-}  %%{F#fff}%H:%M%%{F-}
+date =    %%{F#99}%d/%m/%Y%%{F-}  %%{F#fff}%H:%M:%S%%{F-}
 date-alt = %%{F#fff}%A, %d %B %Y  %%{F#fff}%H:%M%%{F#666}:%%{F#fba922}%S%%{F-}
 
 [module/memory]
