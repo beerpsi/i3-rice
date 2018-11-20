@@ -46,57 +46,7 @@ font-4 = MaterialIcons:size=10;-1
 font-5 = Termsynu:size=8:antialias=false;0
 
 modules-left = i3
-modules-right = cpu memory
-
-[bar/top2]
-monitor = DP-1
-width = 100%
-height = 34
-
-background = #00000000
-foreground = #ccffffff
-
-line-color = ${bar/bottom.background}
-line-size = 16
-
-spacing = 2
-padding-right = 5
-module-margin = 4
-
-font-0 = NotoSans-Regular:size=8;-1
-font-1 = MaterialIcons:size=10;0
-font-2 = Termsynu:size=8:antialias=false;-2
-font-3 = FontAwesome:size=10;0
-
-modules-left = powermenu mpd
-modules-right = volume backlight wireless-network wired-network battery date
-
-[bar/bottom2]
-monitor = DP-1
-bottom = true
-width = 100%
-height = 27
-
-background = ${bar/top.background}
-foreground = ${bar/top.foreground}
-
-line-color = ${bar/top.background}
-line-size = 2
-
-spacing = 3
-padding-right = 4
-module-margin-left = 0
-module-margin-right = 6
-
-font-0 = NotoSans-Regular:size=8;0
-font-1 = unifont:size=6;-3
-font-2 = FontAwesome:size=8;-2
-font-3 = NotoSans-Regular:size=8;-1
-font-4 = MaterialIcons:size=10;-1
-font-5 = Termsynu:size=8:antialias=false;0
-
-modules-left = i3
-modules-right = cpu memory
+modules-right = cpu system-fan-speed memory
 
 #[module/backlight]
 #type = internal/xbacklight
@@ -439,5 +389,10 @@ label-mounted = %free%/%total%
 ;label-mounted =  %%{e875} %free%/%total%
 
 label-unmounted = %mountpoint%: not mounted
+
+[module/system-fan-speed]
+type = custom/script
+exec = ~/.config/polybar/system-fan-speed
+interval = 10
 
 ; vim:ft=dosini
