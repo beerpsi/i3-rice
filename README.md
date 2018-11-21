@@ -1,7 +1,7 @@
 # i3-rice
 i3 rice stuff. Will write a tutorial some day.
 
-![Screenshot](https://i.redd.it/1enl36nkdfz11.png)
+![Screenshot](https://media.discordapp.net/attachments/173927645334077441/514785256084340736/desktop-21.11.2018.png?width=1920&height=1080)
 # Changelog
 ## 20.11.2018: 
 
