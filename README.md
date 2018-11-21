@@ -1,5 +1,5 @@
 # i3-rice
-i3 rice stuff
+i3 rice stuff. Will write a tutorial some day.
 
 ![Screenshot](https://i.redd.it/1enl36nkdfz11.png)
 # Changelog
@@ -16,3 +16,7 @@ i3 rice stuff
 5.Added brightness
 
 6.Added support for redshift.
+
+## 21.11.2018
+
+1.Slight modification to fanspeed script.
