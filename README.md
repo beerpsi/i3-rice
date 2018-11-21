@@ -20,3 +20,5 @@ i3 rice stuff. Will write a tutorial some day.
 ## 21.11.2018
 
 1.Slight modification to fanspeed script.
+
+2.Added tray icons.
