@@ -15,7 +15,9 @@ i3 rice stuff. Will write a tutorial some day.
 
 5.Added brightness
 
-6.Added support for redshift.
+6.Added support for redshift
+
+(temperature and redshift also shamelessly stolen from https://github.com/x70b1/polybar-scripts/tree/master/polybar-scripts)
 
 ## 21.11.2018
 
