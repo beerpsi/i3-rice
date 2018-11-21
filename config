@@ -1,3 +1,4 @@
+; mrlacpeanut's polybar config
 [bar/top]
 monitor = ${env:MONITOR:}
 width = 100%
@@ -8,6 +9,10 @@ foreground = #ccffffff
 
 line-color = ${bar/bottom.background}
 line-size = 16
+
+; If you want tray icons to be on the top bar use this.
+;tray-position=right
+;tray-padding=2
 
 spacing = 2
 padding-right = 5
@@ -32,6 +37,10 @@ foreground = ${bar/top.foreground}
 
 line-color = ${bar/top.background}
 line-size = 2
+
+; Uncomment if you want no tray icons on the bottom bar.
+tray-position = right
+tray-padding = 2 
 
 spacing = 3
 padding-right = 4
