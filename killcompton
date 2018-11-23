@@ -1,0 +1,9 @@
+#!/bin/sh
+compton=$(ps aux | grep -w "[c]ompton")
+
+if [ "$compton" != "" ]
+then
+ killall compton
+else
+ compton -cC
+fi
